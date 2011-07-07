@@ -56,6 +56,11 @@ public class SetAlarm extends PreferenceActivity
     private int     mMinutes;
     private boolean mTimePickerCancelled;
     private Alarm   mOriginalAlarm;
+    
+    private String open_str;
+    private String close_str;
+    private String save_open_label;
+    private String save_close_label;
 
     /**
      * Set an alarm.  Requires an Alarms.ALARM_ID to be passed in as an
@@ -67,7 +72,10 @@ public class SetAlarm extends PreferenceActivity
 
         // Override the default content view.
         setContentView(R.layout.set_alarm);
-
+        open_str = this.getString(R.string.open_str);
+        close_str = this.getString(R.string.colse_str);
+        save_open_label = this.getString(R.string.save_open_label);
+        save_close_label = this.getString(R.string.save_close_labe);
         addPreferencesFromResource(R.xml.alarm_prefs);
 
         // Get each preference so we can retrieve the value later.
@@ -114,11 +122,11 @@ public class SetAlarm extends PreferenceActivity
 			@Override
 			public boolean onPreferenceClick(Preference preference) {
 				if(mVibratePref.isChecked()){
-					mLabel.setText("Open AirMode.Close all network.");
-		            mLabel.setSummary("Open AirMode.Close all network.");
+					mLabel.setText(open_str);
+		            mLabel.setSummary(open_str);
 				}else{
-					mLabel.setText("Close AirMode.Recover all network.");
-		            mLabel.setSummary("Close AirMode.Recover all network.");
+					mLabel.setText(close_str);
+		            mLabel.setSummary(close_str);
 				}
 				return false;
 			}
@@ -219,12 +227,12 @@ public class SetAlarm extends PreferenceActivity
         mRepeatPref.setDaysOfWeek(alarm.daysOfWeek);
         mVibratePref.setChecked(alarm.vibrate);
         if(alarm.vibrate){
-        	mLabel.setText("Open AirMode.Close all network.");
-           mLabel.setSummary("Open AirMode.Close all network.");
+        	mLabel.setText(open_str);
+            mLabel.setSummary(open_str);
         	//.label = "Open AirMode.";
         }else{
-        	mLabel.setText("Close AirMode.Close all network.");
-            mLabel.setSummary("Close AirMode.Close all network.");
+        	mLabel.setText(close_str);
+            mLabel.setSummary(close_str);
         	//alarm.label = "Close AirMode.";
         }
         
@@ -287,6 +295,7 @@ public class SetAlarm extends PreferenceActivity
     }
 
     private long saveAlarm() {
+    	
         Alarm alarm = new Alarm();
         alarm.id = mId;
         alarm.enabled = mEnabledPref.isChecked();
@@ -295,9 +304,9 @@ public class SetAlarm extends PreferenceActivity
         alarm.daysOfWeek = mRepeatPref.getDaysOfWeek();
         alarm.vibrate = mVibratePref.isChecked();
         if(alarm.vibrate){
-        	alarm.label = "Open AirMode.";
+        	alarm.label = save_open_label;
         }else{
-        	alarm.label = "Close AirMode.";
+        	alarm.label = save_close_label;
         }
         //alarm.label = mLabel.getText();
        // alarm.alert = mAlarmPref.getAlert();

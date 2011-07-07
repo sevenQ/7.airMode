@@ -381,8 +381,8 @@ public class Alarms {
                 context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
         am.set(AlarmManager.RTC_WAKEUP, atTimeInMillis, sender);
-
-        setStatusBarIcon(context, true);
+        //seven interrupt here,not notification
+        //setStatusBarIcon(context, true);
 
         Calendar c = Calendar.getInstance();
         c.setTimeInMillis(atTimeInMillis);
@@ -402,7 +402,8 @@ public class Alarms {
                 context, 0, new Intent(ALARM_ALERT_ACTION),
                 PendingIntent.FLAG_CANCEL_CURRENT);
         am.cancel(sender);
-        setStatusBarIcon(context, false);
+      //seven interrupt here,not notification
+        //setStatusBarIcon(context, false);
         saveNextAlarm(context, "");
     }
 
@@ -490,7 +491,8 @@ public class Alarms {
     private static void setStatusBarIcon(Context context, boolean enabled) {
         Intent alarmChanged = new Intent("android.intent.action.ALARM_CHANGED");
         alarmChanged.putExtra("alarmSet", enabled);
-        context.sendBroadcast(alarmChanged);
+        //seven interrupt here.
+        //context.sendBroadcast(alarmChanged);
     }
 
     private static long calculateAlarm(Alarm alarm) {

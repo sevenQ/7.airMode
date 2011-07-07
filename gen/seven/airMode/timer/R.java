@@ -125,185 +125,189 @@ public final class R {
     public static final class string {
         /**  Menu item on Alarm Clock screen: Add alarm 
          */
-        public static final int add_alarm=0x7f060004;
-        public static final int airmode_close=0x7f06003c;
-        public static final int airmode_open=0x7f06003d;
+        public static final int add_alarm=0x7f060003;
+        public static final int airmode_close=0x7f06000a;
+        public static final int airmode_open=0x7f06000b;
         /**  Alarm Alert screen: this message is shown after an alarm rung
          unattended for a number of minutes.  It tells the user that
          the alarm has been silenced.
          */
-        public static final int alarm_alert_alert_silenced=0x7f060015;
+        public static final int alarm_alert_alert_silenced=0x7f06001b;
         /**  Button labels on the alarm dialog: Dismiss 
          */
-        public static final int alarm_alert_dismiss_text=0x7f060014;
+        public static final int alarm_alert_dismiss_text=0x7f06001a;
         /**  Toast that appears after Alarm is snoozed from the Alarm
          dialog. Says the alarm will snooze for xxx minutes.  
          */
-        public static final int alarm_alert_snooze_set=0x7f060017;
+        public static final int alarm_alert_snooze_set=0x7f06001d;
         /**  Button labels on the alarm dialog: Snooze 
          */
-        public static final int alarm_alert_snooze_text=0x7f060016;
-        public static final int alarm_button_description=0x7f060033;
+        public static final int alarm_alert_snooze_text=0x7f06001c;
+        public static final int alarm_button_description=0x7f060039;
         /**  Setting summary for whether the alarm should play in silent mode. 
          */
-        public static final int alarm_in_silent_mode_summary=0x7f060025;
+        public static final int alarm_in_silent_mode_summary=0x7f06002b;
         /**  Setting title for whether the alarm should play in silent mode.
          Usually, silent mode only affects the ringer, but this setting
          will make the alarms respect silent mode too. 
          */
-        public static final int alarm_in_silent_mode_title=0x7f060024;
+        public static final int alarm_in_silent_mode_title=0x7f06002a;
         /**  Title for AlarmClock activity 
          */
-        public static final int alarm_list_title=0x7f060003;
+        public static final int alarm_list_title=0x7f060002;
         /**  Text to display in the notification ticker and label 
          */
-        public static final int alarm_notify_snooze_label=0x7f06002e;
+        public static final int alarm_notify_snooze_label=0x7f060034;
         /**  Text to display in the notification when the alarm has been snoozed 
          */
-        public static final int alarm_notify_snooze_text=0x7f06002f;
+        public static final int alarm_notify_snooze_text=0x7f060035;
         /**  Text to display in the small text of the notification 
          */
-        public static final int alarm_notify_text=0x7f06002d;
+        public static final int alarm_notify_text=0x7f060033;
         /**  Setting labels on Set alarm screen: Repeat 
          */
-        public static final int alarm_repeat=0x7f060011;
+        public static final int alarm_repeat=0x7f060017;
         /**  Setting labels on Set alarm screen: Vibration on or off 
          */
-        public static final int alarm_vibrate=0x7f060010;
+        public static final int alarm_vibrate=0x7f06000d;
         /**  Setting summary for changing the alarm volume. 
          */
-        public static final int alarm_volume_summary=0x7f06002b;
+        public static final int alarm_volume_summary=0x7f060031;
         /**  Setting title for changing the alarm volume. 
          */
-        public static final int alarm_volume_title=0x7f06002a;
+        public static final int alarm_volume_title=0x7f060030;
         /**  Setting labels on Set alarm screen: Select alarm ringtone  
          */
-        public static final int alert=0x7f060012;
+        public static final int alert=0x7f060018;
         /**  Label for analog clock gadget, shown in list of all gadgets 
          */
-        public static final int analog_gadget=0x7f060022;
+        public static final int analog_gadget=0x7f060028;
         /**  
  Label shown on launcher icon 
          */
-        public static final int app_label=0x7f060002;
+        public static final int app_label=0x7f060012;
         public static final int app_name=0x7f060001;
         /**  A short representation of charging information, e.g "34%" 
          */
-        public static final int battery_charging_level=0x7f060039;
+        public static final int battery_charging_level=0x7f06003f;
         /**  Appears at the top of the Clock Picker screen: Tell user to
          select a clock to display 
          */
-        public static final int clock_instructions=0x7f060021;
+        public static final int clock_instructions=0x7f060027;
+        public static final int colse_str=0x7f06000f;
         /**  Alarm confirmation toast: singular day 
          */
-        public static final int day=0x7f060018;
+        public static final int day=0x7f06001e;
         /**  Repeat options that appear under an alarm on main Alarm Clock
          screen to identify repetition schedule: concatenate days with
          this character, i.e. "Mon, Tue, Wed" 
          */
-        public static final int day_concat=0x7f060020;
+        public static final int day_concat=0x7f060026;
         /**  Alarm confirmation toast: plural days 
          */
-        public static final int days=0x7f060019;
+        public static final int days=0x7f06001f;
         /**  Default label to display for an alarm 
          */
-        public static final int default_label=0x7f06000e;
+        public static final int default_label=0x7f060016;
         /**  Delete button when editing an alarm. 
          */
-        public static final int delete=0x7f060029;
+        public static final int delete=0x7f06002f;
         /**  Context Menu Item on Alarm Settings screen: Delete alarm 
          */
-        public static final int delete_alarm=0x7f060007;
+        public static final int delete_alarm=0x7f060005;
         /**  Delete alarm confirmation dialog message. 
          */
-        public static final int delete_alarm_confirm=0x7f06000a;
-        public static final int desk_clock_button_description=0x7f060038;
+        public static final int delete_alarm_confirm=0x7f060008;
+        public static final int desk_clock_button_description=0x7f06003e;
         /**  Context Menu Item on Alarm Settings screen: Disable alarm 
          */
-        public static final int disable_alarm=0x7f060009;
+        public static final int disable_alarm=0x7f060007;
         /**  Done button when editing an alarm. 
          */
-        public static final int done=0x7f060027;
+        public static final int done=0x7f06002d;
         /**  Context Menu Item on Alarm Settings screen: Enable alarm 
          */
-        public static final int enable_alarm=0x7f060008;
+        public static final int enable_alarm=0x7f060006;
         /**  Repeat options that appear under an alarm on main Alarm Clock
          screen to identify repetition schedule: special case for when
          the alarm is set to repeat every day 
          */
-        public static final int every_day=0x7f06001e;
+        public static final int every_day=0x7f060024;
         /**  String matching the lock screen format for displaying the date. 
          */
         public static final int full_wday_month_day_no_year=0x7f060000;
-        public static final int gallery_button_description=0x7f060034;
+        public static final int gallery_button_description=0x7f06003a;
         /**  Menu item on Alarm Clock screen: Hide clock 
          */
-        public static final int hide_clock=0x7f06000c;
-        public static final int home_button_description=0x7f060037;
+        public static final int hide_clock=0x7f060015;
+        public static final int home_button_description=0x7f06003d;
         /**  Alarm confirmation toast: singular hour 
          */
-        public static final int hour=0x7f06001a;
+        public static final int hour=0x7f060020;
         /**  Alarm confirmation toast: plural hours 
          */
-        public static final int hours=0x7f06001b;
+        public static final int hours=0x7f060021;
         /**  Setting label on Set alarm screen: Label 
          */
-        public static final int label=0x7f06000d;
+        public static final int label=0x7f060009;
         /**  Menu item on Alarm Clock screen: Desk clock 
          */
-        public static final int menu_desk_clock=0x7f060005;
+        public static final int menu_desk_clock=0x7f060013;
         /**  Menu item on Alarm Clock screen: Edit alarm 
          */
-        public static final int menu_edit_alarm=0x7f060006;
-        public static final int menu_item_dock_settings=0x7f06003b;
+        public static final int menu_edit_alarm=0x7f060004;
+        public static final int menu_item_dock_settings=0x7f060041;
         /**  Alarm confirmation toast: singular minute  
          */
-        public static final int minute=0x7f06001c;
+        public static final int minute=0x7f060022;
         /**  Alarm confirmation toast: plural minutes  
          */
-        public static final int minutes=0x7f06001d;
-        public static final int music_button_description=0x7f060035;
+        public static final int minutes=0x7f060023;
+        public static final int music_button_description=0x7f06003b;
         /**  Repeat options that appear under an alarm on main Alarm Clock
          screen to identify repetition schedule: special case for when
          the alarm is set to never repeat 
          */
-        public static final int never=0x7f06001f;
-        public static final int nightmode_button_description=0x7f060036;
+        public static final int never=0x7f060025;
+        public static final int nightmode_button_description=0x7f06003c;
+        public static final int open_str=0x7f06000e;
         /**  Revert button when editing an alarm. 
          */
-        public static final int revert=0x7f060028;
+        public static final int revert=0x7f06002e;
+        public static final int save_close_labe=0x7f060011;
+        public static final int save_open_label=0x7f060010;
         /**  Preference category on Alarm Settings screen: Set alarm 
          */
-        public static final int set_alarm=0x7f06000f;
+        public static final int set_alarm=0x7f06000c;
         /**  Menu item title for general Alarm Clock Settings 
          */
-        public static final int settings=0x7f060023;
+        public static final int settings=0x7f060029;
         /**  Menu item on Alarm Clock screen: Show clock 
          */
-        public static final int show_clock=0x7f06000b;
+        public static final int show_clock=0x7f060014;
         /**  Summary for the alarm preference when silent is chosen. 
          */
-        public static final int silent_alarm_summary=0x7f06002c;
+        public static final int silent_alarm_summary=0x7f060032;
         /**  Setting title for changing the snooze duration. 
          */
-        public static final int snooze_duration_title=0x7f060026;
+        public static final int snooze_duration_title=0x7f06002c;
         /**  Setting labels on Set alarm screen: Set time  
          */
-        public static final int time=0x7f060013;
+        public static final int time=0x7f060019;
         /**  Dialog title of the volume and power setting. 
          */
-        public static final int volume_button_dialog_title=0x7f060031;
+        public static final int volume_button_dialog_title=0x7f060037;
         /**  The summary of the side button setting. 
          */
-        public static final int volume_button_setting_summary=0x7f060032;
+        public static final int volume_button_setting_summary=0x7f060038;
         /**  Title of the setting to change the volume/camera button behavior. 
          */
-        public static final int volume_button_setting_title=0x7f060030;
+        public static final int volume_button_setting_title=0x7f060036;
         /**  What to show the user if the weather widget exists but fails to
          respond. This is a sign of an error; if the weather widget is not
          present on the device, we show nothing at all. 
          */
-        public static final int weather_fetch_failure=0x7f06003a;
+        public static final int weather_fetch_failure=0x7f060040;
     }
     public static final class style {
         public static final int ButtonStripLeft=0x7f080003;

@@ -45,12 +45,11 @@ public class Main extends Activity implements OnItemClickListener {
 
     private void updateIndicatorAndAlarm(boolean enabled, ImageView bar,
             Alarm alarm) {
-        bar.setImageResource(enabled ? R.drawable.ic_indicator_on
-                : R.drawable.ic_indicator_off);
+        bar.setImageResource(enabled ? R.drawable.ic_indicator_on: R.drawable.ic_indicator_off);
+    	//bar.setImageResource(R.drawable.ic_indicator_off);
         Alarms.enableAlarm(this, alarm.id, enabled);
         if (enabled) {
-            SetAlarm.popAlarmSetToast(this, alarm.hour, alarm.minutes,
-                    alarm.daysOfWeek);
+            SetAlarm.popAlarmSetToast(this, alarm.hour, alarm.minutes,alarm.daysOfWeek);
         }
     }
 
@@ -87,7 +86,11 @@ public class Main extends Activity implements OnItemClickListener {
             // Clicking outside the "checkbox" should also change the state.
             indicator.setOnClickListener(new OnClickListener() {
                     public void onClick(View v) {
+                    	//试试这个是否是notification right bar.
+                    	//的确是这里，不过它管理了整个是否打开alarm功能..shit.
                         clockOnOff.toggle();
+                    	//boolean toggle_flag = clockOnOff.isChecked();
+                    	//clockOnOff.setChecked(!toggle_flag);
                         updateIndicatorAndAlarm(clockOnOff.isChecked(),
                                 barOnOff, alarm);
                     }
@@ -116,10 +119,12 @@ public class Main extends Activity implements OnItemClickListener {
             }
 
             // Display the label
+            // 设置显示的label值
             TextView labelView =
                     (TextView) view.findViewById(R.id.label);
             if (alarm.label != null && alarm.label.length() != 0) {
                 labelView.setText(alarm.label);
+            	//labelView.setText("I hate!!");
                 labelView.setVisibility(View.VISIBLE);
             } else {
                 labelView.setVisibility(View.GONE);
@@ -282,6 +287,7 @@ public class Main extends Activity implements OnItemClickListener {
         textView.setText(time);
         textView = (TextView) v.findViewById(R.id.header_label);
         textView.setText(alarm.label);
+        //textView.setText("I like");
 
         // Set the custom view on the menu.
         menu.setHeaderView(v);
@@ -291,30 +297,6 @@ public class Main extends Activity implements OnItemClickListener {
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_item_settings:
-                //startActivity(new Intent(this, SettingsActivity.class));
-                return true;
-            case R.id.menu_item_desk_clock:
-               // startActivity(new Intent(this, DeskClock.class));
-                return true;
-            case R.id.menu_item_add_alarm:
-                addNewAlarm();
-                return true;
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-    	//注释掉menu
-        //getMenuInflater().inflate(R.menu.alarm_list_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
     public void onItemClick(AdapterView parent, View v, int pos, long id) {
         Intent intent = new Intent(this, SetAlarm.class);

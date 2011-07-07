@@ -39,14 +39,14 @@
         android:gravity="center_vertical"
         android:ellipsize="none"/>
 
-    <TextView android:id="@+id/header_label"
+    <seven.airMode.timer.MyEllipsizeTextView android:id="@+id/header_label"
         style="?android:attr/textAppearanceLarge"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_marginLeft="20dip"
         android:singleLine="true"
         android:gravity="right|center_vertical"
-        android:ellipsize="end"/>
+        android:ellipsize="marquee"/>
 
 </LinearLayout>
 

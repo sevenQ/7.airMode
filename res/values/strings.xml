@@ -17,33 +17,52 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 	<string name="app_name">7AirMode.Timer</string>
+	<!-- Title for AlarmClock activity -->
+    <string name="alarm_list_title">AirMode Timers</string>
+	 <!-- Menu item on Alarm Clock screen: Add alarm -->
+    <string name="add_alarm">Add AirMode Timer</string>
+    <!-- Menu item on Alarm Clock screen: Edit alarm -->
+    <string name="menu_edit_alarm">Edit Timer</string>
+    <!-- Context Menu Item on Alarm Settings screen: Delete alarm -->
+    <string name="delete_alarm">Delete Timer</string>
+    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->
+    <string name="enable_alarm">Turn Timer on</string>
+    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->
+    <string name="disable_alarm">Turn Timer off</string>
+    <!-- Delete alarm confirmation dialog message. -->
+    <string name="delete_alarm_confirm">This timer will be deleted.</string>
+	 <!-- Setting label on Set alarm screen: Label -->
+    <string name="label">Action</string>
+	<string name="airmode_close">Disable AirMode</string>
+	<string name="airmode_open">AirMode Now</string>
+	<!-- Preference category on Alarm Settings screen: Set alarm -->
+    <string name="set_alarm">Set AirMode Timer</string>
+	<!-- Setting labels on Set alarm screen: Vibration on or off -->
+    <string name="alarm_vibrate">Enable AirMode?</string>
+	
+	<string name="open_str">Enable AirMode,close all networks</string>
+	<string name="colse_str">Disable AirMode,recover all networks.</string>
+	<string name="save_open_label">Enable AirMode.</string>
+	<string name="save_close_labe">Disable AirMode.</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     <!-- -->
     <!-- Label shown on launcher icon -->
     <string name="app_label">Clock</string>
 
-    <!-- Title for AlarmClock activity -->
-    <string name="alarm_list_title">AirMode alarms</string>
-
-    <!-- Menu item on Alarm Clock screen: Add alarm -->
-    <string name="add_alarm">Add AirMode alarm</string>
-
     <!-- Menu item on Alarm Clock screen: Desk clock -->
     <string name="menu_desk_clock">Desk AirMode clock</string>
 
-    <!-- Menu item on Alarm Clock screen: Edit alarm -->
-    <string name="menu_edit_alarm">Edit AirMode alarm</string>
-
-    <!-- Context Menu Item on Alarm Settings screen: Delete alarm -->
-    <string name="delete_alarm">Delete AirMode alarm</string>
-
-    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->
-    <string name="enable_alarm">Turn AirMode alarm on</string>
-
-    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->
-    <string name="disable_alarm">Turn alarm off</string>
-
-    <!-- Delete alarm confirmation dialog message. -->
-    <string name="delete_alarm_confirm">This alarm will be deleted.</string>
+   
 
     <!-- Menu item on Alarm Clock screen: Show clock -->
     <string name="show_clock">Show clock</string>
@@ -51,17 +70,14 @@
     <!-- Menu item on Alarm Clock screen: Hide clock -->
     <string name="hide_clock">Hide clock</string>
 
-    <!-- Setting label on Set alarm screen: Label -->
-    <string name="label">Action</string>
+   
 
     <!-- Default label to display for an alarm -->
     <string name="default_label">Alarm</string>
 
-    <!-- Preference category on Alarm Settings screen: Set alarm -->
-    <string name="set_alarm">Set AirMode alarm</string>
+    
 
-    <!-- Setting labels on Set alarm screen: Vibration on or off -->
-    <string name="alarm_vibrate">AirMode</string>
+    
 
     <!-- Setting labels on Set alarm screen: Repeat -->
     <string name="alarm_repeat">Repeat</string>
@@ -100,14 +116,14 @@
     <!-- Alarm confirmation toast: Describes how long from now until
          alarm fires -->
     <string-array name="alarm_set">
-        <item>This alarm is set for less than 1 minute from now.</item>
-        <item>This alarm is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
-        <item>This alarm is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
-        <item>This alarm is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
-        <item>This alarm is set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
-        <item>This alarm is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
-        <item>This alarm is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
-        <item>This alarm is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This timer is set for less than 1 minute from now.</item>
+        <item>This timer is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
+        <item>This timer is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This timer is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This timer is set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This timer is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This timer is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This timer is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
     </string-array>
 
     <!-- Alarm confirmation toast: singular day -->
@@ -254,8 +270,7 @@
 
     <string name="menu_item_dock_settings" msgid="9161438664257429372">Dock settings</string>
 
-	<string name="airmode_close">Close AirMode</string>
-	<string name="airmode_open">Open AirMode</string>
+	
 </resources>
 
 
