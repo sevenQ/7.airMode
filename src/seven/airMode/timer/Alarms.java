@@ -1,5 +1,9 @@
 /*
- * Copyright (C) 2007 The Android Open Source Project
+ * Copyright (C) 2011 The Seven Open Source Project
+ *	
+   Email:breakprisonsona@gmail.com
+    Autthor:Seven
+    Company:7Bench
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
