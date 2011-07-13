@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CursorAdapter;
 import android.widget.ImageView;
@@ -202,6 +204,37 @@ public class Main extends Activity implements OnItemClickListener {
                     v.setSelected(hasFocus);
                 }
         });
+        
+        final Button open_airalarm = (Button) findViewById(R.id.airmode_open);
+        final Button close_airalarm = (Button) findViewById(R.id.airmode_close);
+        
+        open_airalarm.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Settings.System.putInt(Main.this.getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 1);
+	            Intent airmode = new Intent(Intent.ACTION_AIRPLANE_MODE_CHANGED);
+	            airmode.putExtra("state", true);
+	            sendBroadcast(airmode);
+	        	//Toast.makeText(context, "Open AirMode", 1).show();
+	            MyToast.myToastShow(Main.this, R.drawable.emo_im_tongue_sticking_out, "Open AirMode", 1);
+			}
+		});
+        
+        close_airalarm.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Settings.System.putInt(Main.this.getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 0);
+		        Intent airmode = new Intent(Intent.ACTION_AIRPLANE_MODE_CHANGED);
+		        airmode.putExtra("state", true);
+		        sendBroadcast(airmode);
+		    	//Toast.makeText(context, "Close AirMode", 1).show();
+		        MyToast.myToastShow(Main.this, R.drawable.emo_im_winking, "Close AirMode", 1);
+			}
+		});
         /*
         ImageButton deskClock =
                 (ImageButton) findViewById(R.id.desk_clock_button);

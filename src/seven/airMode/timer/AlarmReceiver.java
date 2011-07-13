@@ -161,14 +161,14 @@ public class AlarmReceiver extends BroadcastReceiver {
         if(alarm.vibrate){
         	Settings.System.putInt(context.getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 1);
             Intent airmode = new Intent(Intent.ACTION_AIRPLANE_MODE_CHANGED);
-            intent.putExtra("state", true);
+            airmode.putExtra("state", true);
             context.sendBroadcast(airmode);
         	//Toast.makeText(context, "Open AirMode", 1).show();
             MyToast.myToastShow(context, R.drawable.emo_im_tongue_sticking_out, "Open AirMode", 1);
         }else{
         	Settings.System.putInt(context.getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 0);
             Intent airmode = new Intent(Intent.ACTION_AIRPLANE_MODE_CHANGED);
-            intent.putExtra("state", true);
+            airmode.putExtra("state", true);
             context.sendBroadcast(airmode);
         	//Toast.makeText(context, "Close AirMode", 1).show();
             MyToast.myToastShow(context, R.drawable.emo_im_winking, "Close AirMode", 1);

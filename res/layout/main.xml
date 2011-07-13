@@ -59,7 +59,33 @@
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	       />
+	       
+<LinearLayout android:id="@+id/add_alarm2"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       
+		<Button android:id="@+id/airmode_open"
+            android:focusable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/airmode_open"/>
+
+        <Button android:id="@+id/airmode_close"
+            android:focusable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+           android:text="@string/airmode_close"/>
+    </LinearLayout>
+	       
 <!--
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -116,5 +142,36 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="@string/airmode_close"/>
+            
+            
+            
+            
+            <TextView
+            android:duplicateParentState="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_weight="1"
+            android:text="@string/airmode_open"
+            android:background="@android:drawable/list_selector_background"
+            android:clickable="true"
+       		android:focusable="true"
+             />
+
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_weight="1"
+            android:text="@string/airmode_close"
+            android:background="@android:drawable/list_selector_background"
+            android:clickable="true"
+       		android:focusable="true"
+             />
 -->
 </LinearLayout>
