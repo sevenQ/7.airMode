@@ -17,7 +17,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
-    <string name="app_name">7飞行模式 定时器</string>
+    <string name="app_name">7Timer</string>
     <string name="alarm_list_title" msgid="7589940465292950600">"飞行模式定时器"</string>
     <string name="add_alarm" msgid="5976616107390962899">"添加定时器"</string>
     <string name="menu_edit_alarm" msgid="7204602994918829751">"修改定时器设置"</string>
